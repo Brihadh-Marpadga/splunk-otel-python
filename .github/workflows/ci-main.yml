@@ -1,10 +1,7 @@
 name: test
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
 
 concurrency:
   group: test-${{ github.head_ref }}
